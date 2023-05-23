@@ -19,7 +19,7 @@ body {
 
 .form-signup img{
   border: 5px solid rgb(77, 22, 129);
-  box-shadow: -5px 5px;
+  box-shadow: -5px 5px 5px rgba(49, 43, 6, 0.3);
   border-radius: 20px;
   padding: 2px;
   margin-bottom: 10px;
@@ -29,10 +29,11 @@ body {
   width: auto;
   font-size: 40px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-shadow: -5px 5px rgba(49, 43, 6, 0.3);
+  text-shadow: -5px 5px 3px rgba(49, 43, 6, 0.3);
   
 }
 .first{
+    box-shadow: -5px 5px 5px rgba(49, 43, 6, 0.3);
     height: 60px ;
     border: 1px solid grey;
   margin-bottom: -1px;
@@ -40,6 +41,7 @@ body {
   border-bottom-left-radius: 0;
 }
 .last{
+    box-shadow: -5px 5px 5px rgba(49, 43, 6, 0.3);
     height: 60px ;
     border: 1px solid grey;
   margin-bottom: -1px;
@@ -47,6 +49,7 @@ body {
 }
 
 .email {
+    box-shadow: -5px 5px 5px rgba(49, 43, 6, 0.3);
     height: 60px ;
     border: 1px solid grey;
   margin-bottom: 10px;
@@ -55,5 +58,8 @@ body {
 }
 
 .btn{
-  box-shadow: -5px 5px;
+  box-shadow: -5px 5px  5px rgba(49, 43, 6, 0.3);
+}
+.cpyrt{
+  text-shadow: -5px 5px 3px rgba(49, 43, 6, 0.3);
 }
