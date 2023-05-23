@@ -2,9 +2,13 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const request = require("request");
 const https = require("https");
+const dotenv = require("dotenv");
 
 const app = express();
 
+dotenv.config({
+    path: "./data/config.env",
+});     
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
 
@@ -35,7 +39,7 @@ app.post("/", function(req, res){
     const url = "https://us12.api.mailchimp.com/3.0/lists/e4cacb8c6e"
     const options = {
         method: "POST",
-        auth: "Himesh:8ea83e3babe2b803e8b7a5a18b079965-us12"
+        auth: "Himesh:4eb85956f055a84218ef07af1baa866d-us12"
     }
     const request = https.request(url, options , function(response){
 
@@ -62,8 +66,8 @@ app.post("/failure", function(req, res){
 
 
 app.listen(process.env.PORT || 3000, function(){
-    console.log("server is running on port 3000")
+    console.log("server is running on port : "+process.env.PORT)
 });
 
-//api key - 8ea83e3babe2b803e8b7a5a18b079965-us12
+//api key - 4eb85956f055a84218ef07af1baa866d-us12
 // audience key - e4cacb8c6e
