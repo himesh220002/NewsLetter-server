@@ -41,7 +41,7 @@ app.post("/", function(req, res){
     const url = "https://us12.api.mailchimp.com/3.0/lists/e4cacb8c6e"
     const options = {
         method: "POST",
-        auth: "Himesh:b4231f32a2f7bf0c5556c56aad10558e-us12"
+        auth: "Himesh:4f7ab4e8c5f2941b802bb949e1a64327-us12"
     }
     const request = https.request(url, options , function(response){
 
@@ -71,5 +71,5 @@ app.listen(process.env.PORT || 3000, function(){
     console.log("server is running on port : "+process.env.PORT)
 });
 
-//api key - b4231f32a2f7bf0c5556c56aad10558e-us12
+//api key - 4f7ab4e8c5f2941b802bb949e1a64327-us12
 // audience key - e4cacb8c6e
