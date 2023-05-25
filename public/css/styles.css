@@ -69,7 +69,11 @@ body {
 }
 
 .btn{
-  box-shadow: -5px 5px  5px rgba(49, 43, 6, 0.3);
+  border: 2px solid goldenrod;
+  border-left: 2px solid rgb(95, 72, 14);
+  border-bottom: 2px solid rgb(95, 72, 14);
+  
+  box-shadow: -15px 15px 5px rgba(49, 43, 6, 0.3);
 }
 .cpyrt{
   text-shadow: -5px 5px 3px rgba(49, 43, 6, 0.3);
